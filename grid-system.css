@@ -1,0 +1,68 @@
+<style>
+/* reset法去除浏览器默认样式 */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+/* 当浏览器视窗>=768px时，设置容器宽度 */
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* 当浏览器视窗>=992px时，设置容器宽度 */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* 当浏览器视窗>=1200px时，设置容器宽度 */
+@media (min-width:1200px) {
+    .container{
+        width:1170px;
+    }
+}
+.row>* {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.col-xs-12 {
+    float: left;
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 当浏览器视窗小于768px时，默认子元素占据100%的宽度 */
+.col-xs-12 {
+    width: 100%;
+}
+/* 当浏览器视窗>=768px时，占据6列，容器一行一半的宽度 */
+@media (min-width:768px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+}
+/* 当浏览器视窗>=992px时，占据3列，容器一行的25%宽度 */
+@media (min-width:992px) {
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-8 {
+        width: 66.67%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+}
+.aside, .main {
+    height: 600px;
+}
+</style>
