@@ -1,4 +1,4 @@
-<style>
+
 /* reset法去除浏览器默认样式 */
 * {
     margin: 0;
@@ -65,4 +65,3 @@
 .aside, .main {
     height: 600px;
 }
-</style>
